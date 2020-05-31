@@ -34,5 +34,5 @@ app.get('/:shortUrl', async (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () =>
-  console.log(`Listening on port ${process.envPORT || 3000}`)
+  console.log(`Listening on port ${process.envPORT.PORT || 3000}`)
 );
